@@ -1,0 +1,117 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 4rem 0;
+}
+
+.timeline-container::after {
+  background-color: #8000ff;
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 0.4rem;
+  height: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.3rem;
+  position: relative;
+  margin: 0.1rem 0;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.timeline-item-content {
+  box-shadow: 0 0 5px #8000ff;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  position: relative;
+  width: 40rem;
+  max-width: 100%;
+  text-align: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+  text-align: left;
+}
+
+.timeline-item-content .date {
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-item-content .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.timeline-item-content .company {
+  color: #333;
+  font-size: 14px;
+  margin: 5px 0 15px;
+}
+
+.timeline-item-content .description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.timeline-item-content .circle {
+  background-color: #fff;
+  border: 3px solid #8000ff;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -40px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+  right: auto;
+  left: -40px;
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    margin: 2rem 0;
+  }
+  .timeline-item {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .timeline-container::after {
+    display: none;
+  }
+  .timeline-item-content {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .timeline-item-content .circle {
+    display: none;
+  }
+  .timeline-item:nth-child(odd) .timeline-item-content {
+    text-align: left;
+  }
+}
