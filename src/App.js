@@ -7,7 +7,6 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
-import GlobalStyle from "./styles/GlobalStyles";
 
 const App = () => {
   return (
