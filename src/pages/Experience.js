@@ -1,9 +1,7 @@
 import React from "react";
 import TimeLine from "../components/TimeLine";
-import "../styles/Experience.css"; // Asumimos que crearás este archivo CSS para los estilos
-
+import "../styles/Experience.css";
 const Experience = () => {
-  // Datos de ejemplo para tus experiencias profesionales
   const experienceData = [
     {
       date: "Enero 2025 - Presente",

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaGithub, FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Card = styled.div`
   background: #fff;

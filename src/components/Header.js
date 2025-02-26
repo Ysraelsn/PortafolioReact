@@ -1,8 +1,7 @@
-// src/components/Header.js
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
-import logo from "../assets/logo.png"; // Asegúrate de tener un logo en la carpeta assets
+import logo from "../assets/logo.png";
 
 const HeaderContainer = styled.header`
   display: flex;

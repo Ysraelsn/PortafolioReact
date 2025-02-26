@@ -4,7 +4,6 @@ import styled from "styled-components";
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/t2.png";
 import image3 from "../assets/t3.png";
-import { FaH } from "react-icons/fa6";
 import { FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 
 const ProjectsContainer = styled.section`

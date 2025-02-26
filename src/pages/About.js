@@ -1,7 +1,6 @@
-// src/pages/About.js
 import React from "react";
 import styled from "styled-components";
-import profilePic from "../assets/profile.jpg"; // Tu foto de perfil
+import profilePic from "../assets/profile.jpg";
 
 const AboutContainer = styled.section`
   display: flex;

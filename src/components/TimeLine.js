@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/TimeLine.css"; // Asumimos que crearás este archivo CSS para los estilos
+import "../styles/TimeLine.css";
 
 const TimeLineItem = ({ date, title, company, description }) => {
   return (

@@ -1,8 +1,7 @@
-// src/App.js
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer"; // Importamos el Footer
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -21,7 +20,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/experience" element={<Experience />} />
       </Routes>
-      <Footer /> {/* Footer al final */}
+      <Footer /> {}
     </BrowserRouter>
   );
 };
